@@ -210,7 +210,7 @@ particlesJS("particles-js", {
         },
         "retina_detect": true
     });
-
+// projects
 document.addEventListener("DOMContentLoaded", () => {
     const projects = [
       {
@@ -218,42 +218,42 @@ document.addEventListener("DOMContentLoaded", () => {
         stack: "SolidJS, AppJS, SASS",
         github: "https://github.com/DakulTech",
         live: "https://ultracolinks.onrender.com/",
-        image: "assets/projects/project1.png"
+        image: "assets/project/project1.png"
       },
       {
         title: "Project Two",
         stack: "HTML, JavaScript, PHP, SASS",
         github: "https://github.com/DakulTech",
         live: "https://tacoin.com.ng/index.php",
-        image: "assets/projects/project2.png"
+        image: "assets/project/project2.png"
       },
       {
         title: "Project Three",
         stack: "HTML, JavaScript, Bootstrap, SASS",
         github: "https://github.com/DakulTech",
         live: "https://code-with-jtrfwxe7a-dakultech.vercel.app/#",
-        image: "assets/projects/project3.png"
+        image: "assets/project/project3.png"
       },
       {
         title: "Project Four",
         stack: "HTML5, SASS",
         github: "https://github.com/DakulTech",
         live: "https://judeadeniji.github.io/buyme/",
-        image: "assets/projects/project4.png"
+        image: "assets/project/project4.png"
       },
       {
         title: "Project Five",
         stack: "HTML5, JavaScript, SASS",
         github: "https://github.com/DakulTech",
         live: "https://de-embeez.netlify.app/index.html#",
-        image: "assets/projects/project5.png"
+        image: "assets/project/project5.png"
       },
       {
         title: "Project Six",
         stack: "HTML5, SASS",
         github: "https://github.com/DakulTech",
         live: "https://dakultech.github.io/TeeHub-Home/",
-        image: "assets/projects/project6.png"
+        image: "assets/project/project6.png"
       }
     ];
 
