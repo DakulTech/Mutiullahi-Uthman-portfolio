@@ -210,3 +210,69 @@ particlesJS("particles-js", {
         },
         "retina_detect": true
     });
+
+
+<script>
+  const projects = [
+    {
+      title: "Project One",
+      stack: "SolidJS, AppJS, SASS",
+      github: "https://github.com/DakulTech",
+      live: "https://ultracolinks.onrender.com/"
+    },
+    {
+      title: "Project Two",
+      stack: "HTML, JavaScript, PHP, SASS",
+      github: "https://github.com/DakulTech",
+      live: "https://tacoin.com.ng/index.php"
+    },
+    {
+      title: "Project Three",
+      stack: "HTML, JavaScript, Bootstrap, SASS",
+      github: "https://github.com/DakulTech",
+      live: "https://code-with-jtrfwxe7a-dakultech.vercel.app/#"
+    },
+    {
+      title: "Project Four",
+      stack: "HTML5, SASS",
+      github: "https://github.com/DakulTech",
+      live: "https://judeadeniji.github.io/buyme/"
+    },
+    {
+      title: "Project Five",
+      stack: "HTML5, JavaScript, SASS",
+      github: "https://github.com/DakulTech",
+      live: "https://de-embeez.netlify.app/index.html#"
+    },
+    {
+      title: "Project Six",
+      stack: "HTML5, SASS",
+      github: "https://github.com/DakulTech",
+      live: "https://dakultech.github.io/TeeHub-Home/"
+    }
+  ];
+
+  const container = document.getElementById("projects-grid");
+
+  projects.forEach(project => {
+    const card = document.createElement("div");
+    card.className = "project-card";
+    card.innerHTML = `
+      <h3 class="project-title">${project.title}</h3>
+      <p class="project-stack">${project.stack}</p>
+      <div class="project-links">
+        <a href="${project.github}" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="${project.live}" target="_blank" aria-label="Live Site">
+          <i class="fas fa-globe"></i>
+        </a>
+      </div>
+    `;
+    container.appendChild(card);
+  });
+</script>
+
+
+
+
