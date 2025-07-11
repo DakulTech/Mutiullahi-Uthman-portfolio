@@ -212,73 +212,108 @@ particlesJS("particles-js", {
     });
 // projects
 document.addEventListener("DOMContentLoaded", () => {
-    const projects = [
+    const allProjects = [
       {
-        title: "Project One",
-        stack: "SolidJS, AppJS, SASS",
+        title: "Dakul-Delights",
+        stack: "MERN",
         github: "https://github.com/DakulTech",
-        live: "https://ultracolinks.onrender.com/",
-        image: "assets/project/project1.png"
+        live: "https://dakul-delights.vercel.app/",
+        image: "assets/projects/project1.png"
       },
       {
-        title: "Project Two",
-        stack: "HTML, JavaScript, PHP, SASS",
+        title: "SereneSuites",
+        stack: "React-Vite, NodejS, MongoDB, Clark, Express ",
         github: "https://github.com/DakulTech",
-        live: "https://tacoin.com.ng/index.php",
-        image: "assets/project/project2.png"
+        live: "https://serene-suites.vercel.app/",
+        image: "assets/projects/project2.png"
       },
       {
-        title: "Project Three",
-        stack: "HTML, JavaScript, Bootstrap, SASS",
+        title: "School Portal",
+        stack: "ReactJS,NodeJS, ExpressJS, MongoDB, Cloudinary",
         github: "https://github.com/DakulTech",
-        live: "https://code-with-jtrfwxe7a-dakultech.vercel.app/#",
-        image: "assets/project/project3.png"
+        live: "https://raodotulirfaan.vercel.app/",
+        image: "assets/projects/project3.png"
       },
       {
-        title: "Project Four",
-        stack: "HTML5, SASS",
+        title: "Pelz Secret",
+        stack: "HTML5, Javascript, CSS, Node< Express, MongoDB, Cloudinary",
         github: "https://github.com/DakulTech",
-        live: "https://judeadeniji.github.io/buyme/",
-        image: "assets/project/project4.png"
+        live: "https://pelzsecret.com.ng/",
+        image: "assets/projects/project4.png"
       },
       {
-        title: "Project Five",
+        title: "De-embeez",
         stack: "HTML5, JavaScript, SASS",
         github: "https://github.com/DakulTech",
         live: "https://de-embeez.netlify.app/index.html#",
-        image: "assets/project/project5.png"
+        image: "assets/projects/project5.png"
       },
       {
-        title: "Project Six",
+        title: "TeeHub",
         stack: "HTML5, SASS",
         github: "https://github.com/DakulTech",
         live: "https://dakultech.github.io/TeeHub-Home/",
-        image: "assets/project/project6.png"
+        image: "assets/projects/project6.png"
+      },
+      {
+        title: "Project Seven",
+        stack: "Next.js, Tailwind CSS, MongoDB",
+        github: "https://github.com/DakulTech",
+        live: "https://next-dakul-project.vercel.app",
+        image: "assets/projects/project7.png"
+      },
+      {
+        title: "Project Eight",
+        stack: "React, Firebase, SCSS",
+        github: "https://github.com/DakulTech",
+        live: "https://react-chat-dakul.netlify.app",
+        image: "assets/projects/project8.png"
+      },
+      {
+        title: "Project Nine",
+        stack: "Vue, Node.js, CSS",
+        github: "https://github.com/DakulTech",
+        live: "https://vue-playground-dakul.netlify.app",
+        image: "assets/projects/project9.png"
       }
     ];
 
     const container = document.getElementById("projects-grid");
+    const showMoreBtn = document.getElementById("show-more");
 
-    projects.forEach(project => {
-      const card = document.createElement("div");
-      card.className = "project-card";
-      card.innerHTML = `
-        <img src="${project.image}" alt="${project.title}" class="project-img" />
-        <div class="project-info">
-          <div class="project-bio">
-            <h3>${project.title}</h3>
-            <p>${project.stack}</p>
+    let visibleCount = 6;
+
+    function renderProjects(start, end) {
+      allProjects.slice(start, end).forEach(project => {
+        const card = document.createElement("div");
+        card.className = "project-card";
+        card.innerHTML = `
+          <img src="${project.image}" alt="${project.title}" class="project-img" />
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>${project.title}</h3>
+              <p>${project.stack}</p>
+            </div>
+            <div class="project-link">
+              <a href="${project.github}" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="${project.live}" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
           </div>
-          <div class="project-link">
-            <a href="${project.github}" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="${project.live}" target="_blank"><i class="fas fa-globe"></i></a>
-          </div>
-        </div>
-      `;
-      container.appendChild(card);
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    // Initial render
+    renderProjects(0, visibleCount);
+
+    // Show more functionality
+    showMoreBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      renderProjects(visibleCount, allProjects.length);
+      showMoreBtn.style.display = "none"; // hide button after loading all
     });
   });
-
 
 
   
