@@ -380,6 +380,54 @@ body {
   left: 10px;
 }
 
+.projects-section {
+  padding: 4rem 1.5rem;
+  background-color: var(--bg-primary);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: var(--card-background);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.project-title {
+  font-size: 1.1rem;
+  font-weight: var(--weight-bold);
+  margin-bottom: 0.5rem;
+}
+
+.project-stack {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.project-links a {
+  font-size: 1.2rem;
+  margin-right: 0.8rem;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.project-links a:hover {
+  color: var(--primary-color);
+}
+
 /* Footer */
 #footer {
   background: #111111;
