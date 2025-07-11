@@ -212,7 +212,7 @@ particlesJS("particles-js", {
     });
 
 
-<script>
+
   const projects = [
     {
       title: "Project One",
@@ -271,7 +271,7 @@ particlesJS("particles-js", {
     `;
     container.appendChild(card);
   });
-</script>
+
 
 
 
