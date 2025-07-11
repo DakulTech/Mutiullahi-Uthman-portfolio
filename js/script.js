@@ -256,21 +256,21 @@ document.addEventListener("DOMContentLoaded", () => {
         image: "assets/projects/project6.png"
       },
       {
-        title: "Project Seven",
+        title: "Waste to Wealth",
         stack: "Next.js, Tailwind CSS, MongoDB",
         github: "https://github.com/DakulTech",
         live: "https://next-dakul-project.vercel.app",
         image: "assets/projects/project7.png"
       },
       {
-        title: "Project Eight",
+        title: "Code With Me",
         stack: "React, Firebase, SCSS",
         github: "https://github.com/DakulTech",
-        live: "https://react-chat-dakul.netlify.app",
+        live: "https://code-with-me-nine.vercel.app/",
         image: "assets/projects/project8.png"
       },
       {
-        title: "Project Nine",
+        title: "Tacoin",
         stack: "Vue, Node.js, CSS",
         github: "https://github.com/DakulTech",
         live: "https://vue-playground-dakul.netlify.app",
