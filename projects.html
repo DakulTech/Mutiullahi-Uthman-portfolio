@@ -22,10 +22,12 @@
     <meta property="twitter:description" content="Mutiullahi Uthman - Portfolio website" />
     <meta property="twitter:image" content="https://i.postimg.cc/WprQ4bQh/dakul-portfolio.png" />
 
-    <!-- Favicon -->
+    <!-- Icons & Fonts -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png" />
     <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
 
@@ -37,10 +39,11 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- Styles -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utilities.css" />
   </head>
+
   <body>
     <!-- Navbar -->
     <nav class="navbar">
@@ -64,10 +67,8 @@
         <p>Check out some of my personal and paid projects</p>
       </div>
 
-      <!-- Dynamic Grid Container -->
       <article id="projects-grid" class="projects-grid"></article>
 
-      <!-- Show More Button -->
       <a href="#" id="show-more" class="btn btn-secondary">
         Show More <i class="fas fa-arrow-right"></i>
       </a>
@@ -76,11 +77,12 @@
     <!-- Footer -->
     <footer id="footer">
       <div class="container">
-        <p>&copy; 2025 Dakul Tech. All rights reserved.</p>
+        <p>&copy; <span id="datee"></span> Dakul Tech. All rights reserved.</p>
       </div>
     </footer>
 
-    <!-- JS Loader (MUST be last!) -->
+    <!-- External JS -->
     <script src="js/script.js"></script>
   </body>
 </html>
+
