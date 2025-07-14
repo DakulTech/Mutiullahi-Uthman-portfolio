@@ -440,51 +440,138 @@ body {
 
 /* Card Profile */
 .card-profile {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  padding: 2rem 1.5rem;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 2.5rem 2rem 2rem 2rem;
   margin: 2rem 0;
   transition: box-shadow 0.3s;
+  z-index: 10;
 }
 
 .card-profile-image img {
-  border: 4px solid rgba(255,255,255,0.7);
+  border: 5px solid rgba(255,255,255,0.7);
   box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  background: #fff;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.profile-card-social {
+  margin-bottom: 1.5rem;
 }
 
 .profile-card-social a {
-  margin: 0 0.5rem;
-  font-size: 1.3rem;
-  color: var(--text-color);
-  transition: color 0.2s;
+  margin: 0 0.7rem;
+  font-size: 1.5rem;
+  color: #222;
+  opacity: 0.85;
+  transition: color 0.2s, opacity 0.2s;
 }
 
 .profile-card-social a:hover {
   color: var(--primary-color);
+  opacity: 1;
 }
 
+.card-profile h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-profile .text-muted {
+  color: #6c757d !important;
+  font-size: 1.1rem;
+}
+
+.card-profile p {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-profile hr {
+  margin: 1.5rem 0;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.contact-section h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.contact-section p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.2rem;
+}
+
+.contact-section .form-group {
+  margin-bottom: 1rem;
+}
+
+.contact-section .form-control {
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  background: rgba(255,255,255,0.7);
+  box-shadow: none;
+  transition: border 0.2s;
+}
+
+.contact-section .form-control:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255,205,66,0.15);
+}
+
+.contact-section .btn-info {
+  background: var(--primary-color);
+  border: none;
+  color: #222;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.7rem 2rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.contact-section .btn-info:hover {
+  background: #ffd35c;
+  color: #111;
+}
+
+/* Button Outline Dark */
+.btn-outline-dark {
+  background: rgba(255,255,255,0.25);
+  border: 1.5px solid #222;
+  color: #222;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(31,38,135,0.08);
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.btn-outline-dark:hover,
+.btn-outline-dark:focus {
+  background: var(--primary-color);
+  color: #111;
+  border-color: var(--primary-color);
+}
+
+/* Responsive adjustments */
 @media (max-width: 600px) {
   .card-profile {
-    padding: 1rem 0.5rem;
+    padding: 1.2rem 0.5rem;
   }
-}
-
-/* Responsive Fixes */
-@media (max-width: 480px) {
-  .project-img {
-    height: 160px;
-  }
-
-  .project-title {
-    font-size: 1.05rem;
-  }
-
-  .project-stack {
-    font-size: 0.85rem;
+  .card-profile h3 {
+    font-size: 1.3rem;
   }
 }
 
