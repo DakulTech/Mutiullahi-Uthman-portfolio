@@ -66,10 +66,19 @@ a {
 
 /* Main styling */
 body {
-  background: var(--bg-primary);
+  background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%);
   color: var(--text-color);
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
+}
+
+/* Optional: style the logo link for spacing */
+.logo-link {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1.5rem;
 }
 
 /* Navbar */
