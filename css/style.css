@@ -713,3 +713,9 @@ body {
   transform: scale(1.05);
   box-shadow: var(--shadow);
 }
+
+.mb-3.text-start {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
